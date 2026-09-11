@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blu | Project Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">blu<span>.</span></div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                <li><a href="#about" data-tr="Hakkımda" data-en="About">Hakkımda</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button id="lang-btn" onclick="toggleLanguage()">EN</button>
+            </div>
+            <a href="https://github.com/blupn" target="_blank" class="github-icon-btn" title="GitHub Profile">
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero / Intro -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge" data-tr="Geliştirici & Tasarım Hub'ı" data-en="Developer & Design Hub">Geliştirici & Tasarım Hub'ı</span>
+            <h1 data-tr="Açık Kaynak Kodlu Projeler & Ekosistem" data-en="Open Source Projects & Ecosystem">Açık Kaynak Kodlu Projeler & Ekosistem</h1>
+            <p data-tr="Yazılım, işletim sistemi konseptleri, araçlar ve özgür yazılım projelerimin yer aldığı kişisel hub." data-en="Personal hub featuring software, OS concepts, tools, and open source projects.">Yazılım, işletim sistemi konseptleri, araçlar ve özgür yazılım projelerimin yer aldığı kişisel hub.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" data-tr="Projeleri Keşfet" data-en="Explore Projects">Projeleri Keşfet</a>
+                <a href="#about" class="btn btn-secondary" data-tr="Hakkımda" data-en="About Me">Hakkımda</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projeler Bölümü -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 data-tr="Projelerim" data-en="Projects">Projelerim</h2>
+            <p data-tr="Geliştirdiğim ve katkıda bulunduğum öne çıkan çalışmalar" data-en="Featured works I developed and contributed to">Geliştirdiğim ve katkıda bulunduğum öne çıkan çalışmalar</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Proje Kartı 1 -->
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="tech-tag">Linux / OS</span>
+                    <a href="https://github.com/blupn" target="_blank" class="card-link">GitHub ↗</a>
+                </div>
+                <h3>Ankora Linux Concept</h3>
+                <p data-tr="Performans ve özelleştirme odaklı, modern arayüze sahip Linux dağıtım konsepti ve araçları." data-en="Performance and customization focused Linux distribution concept and tools with a modern UI.">Performans ve özelleştirme odaklı, modern arayüze sahip Linux dağıtım konsepti ve araçları.</p>
+                <div class="card-footer">
+                    <span class="status active" data-tr="● Aktif Geliştirme" data-en="● Active Dev">● Aktif Geliştirme</span>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 2 -->
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="tech-tag">Web & Tools</span>
+                    <a href="https://github.com/blupn" target="_blank" class="card-link">GitHub ↗</a>
+                </div>
+                <h3>Developer Utility Tools</h3>
+                <p data-tr="Geliştirici iş akışlarını hızlandıran, komut satırı ve web tabanlı hafif yardımcı araçlar koleksiyonu." data-en="A lightweight collection of CLI and web-based utility tools to boost developer workflows.">Geliştirici iş akışlarını hızlandıran, komut satırı ve web tabanlı hafif yardımcı araçlar koleksiyonu.</p>
+                <div class="card-footer">
+                    <span class="status open-source" data-tr="● Açık Kaynak" data-en="● Open Source">● Açık Kaynak</span>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 3 -->
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="tech-tag">System / Config</span>
+                    <a href="https://github.com/blupn" target="_blank" class="card-link">GitHub ↗</a>
+                </div>
+                <h3>Dotfiles & Rice</h3>
+                <p data-tr="Masaüstü ortamları için minimalist tema yapılandırmaları, dotfile dosyaları ve arayüz scriptleri." data-en="Minimalist theme configurations, dotfiles, and UI scripts for desktop environments.">Masaüstü ortamları için minimalist tema yapılandırmaları, dotfile dosyaları ve arayüz scriptleri.</p>
+                <div class="card-footer">
+                    <span class="status stable" data-tr="● Kararlı Sürüm" data-en="● Stable">● Kararlı Sürüm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+                <p data-tr="Merhaba, ben blu. Açık kaynak kodlu yazılımlar, sistem mimarileri ve modern web teknolojileri üzerine çalışmalar yapıyorum. Kullanıcı deneyimini ön planda tutan, hızlı ve performanslı çözümler üretmeyi hedefliyorum."
+                   data-en="Hello, I'm blu. I work on open-source software, system architectures, and modern web technologies. I aim to build fast, performant solutions focusing on user experience.">
+                    Merhaba, ben blu. Açık kaynak kodlu yazılımlar, sistem mimarileri ve modern web teknolojileri üzerine çalışmalar yapıyorum. Kullanıcı deneyimini ön planda tutan, hızlı ve performanslı çözümler üretmeyi hedefliyorum.
+                </p>
+                <div class="about-skills">
+                    <span>Linux</span>
+                    <span>System Admin</span>
+                    <span>Web Development</span>
+                    <span>UI/UX</span>
+                    <span>Open Source</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <strong>blu</strong>. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+    </footer>
+
+    <!-- Dil Değiştirme Scripti -->
+    <script>
+        let currentLang = 'tr';
+        function toggleLanguage() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            document.getElementById('lang-btn').innerText = currentLang === 'tr' ? 'EN' : 'TR';
+            
+            document.querySelectorAll('[data-tr]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${currentLang}`);
+            });
+        }
+    </script>
+</body>
+</html>
